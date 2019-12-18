@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<!--Enter Name -->
+<div style="padding:10px;">
+  <div class="enter-name">
+    <form action="{{ url_for('predict') }}" method="POST">
+      <label>Année d'expérience</label>
+      <input type="integer" name="YearsExperience" autofocus>
+      <input type="submit" value="Let's predict salary!">
+    </form>
+  </div>
+</div>
+{% endblock %}
